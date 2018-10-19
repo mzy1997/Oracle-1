@@ -1,5 +1,6 @@
 # Oracle
-![image]()
+![image](https://github.com/shengxu123456uuuu/Oracle/blob/master/test1/1.png)
+
 教材中的查询语句
 查询1：
 
@@ -9,6 +10,8 @@ from hr.departments d，hr.employees e<br>
 where d.department_id = e.department_id<br>
 and d.department_name in ('IT'，'Sales')<br>
 GROUP BY department_name;<br>
+
+![image](https://github.com/shengxu123456uuuu/Oracle/blob/master/test1/2.png)<br>
 
 查询2：
 SELECT d.department_name，count(e.job_id)as "部门总人数"，<br>
