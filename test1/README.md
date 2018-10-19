@@ -22,7 +22,7 @@ GROUP BY department_name<br>
 HAVING d.department_name in ('IT'，'Sales');<br>
 
 
-实验分析:通过对以上两个sql语句运行，查询结果相同，但后者所用时间更少，因此更优,优化指导可以增加一个索引。<br><br>
+实验分析:通过对以上两个sql语句运行，查询结果相同，但后者所用时间更少，因此更优,优化指导可以增加一个索引,通过索引搜索更快。<br><br>
 
 实验代码：
 SELECT d.department_name，count(e.job_id)as "部门总人数"<br>
