@@ -12,7 +12,7 @@ User altered.<br>
 SQL> GRANT xushen TO new_user;<br>
 Grant succeeded.<br>
 SQL> exit<br>
-语句“ALTER USER xushen_user QUOTA 50M ON users;”是指授权xushen_user用户访问users表空间，空间限额是50M。<br>
+语句“ALTER USER xushen_user QUOTA 50M ON users;”是指授权xushen_user用户访问users表空间，空间限额是50M。<br><br>
 
 第2步：新用户xushen_user连接到pdborcl，创建表mytable和视图myview，插入数据，最后将myview的SELECT对象权限授予hr用户。<br>
 $ sqlplus xushen_user/123@pdborcl<br>
@@ -34,15 +34,15 @@ wang<br>
 SQL> GRANT SELECT ON myview TO hr;<br>
 Grant succeeded.<br>
 SQL>exit<br>
-第3步：用户hr连接到pdborcl，查询xushen_user授予它的视图myview<br>
+第3步：用户hr连接到pdborcl，查询xushen_user授予它的视图myview<br><br>
 $ sqlplus hr/123@pdborcl<br>
 SQL> SELECT * FROM xushen_user.myview;<br>
 NAME<br>
 --------------------------------------------------<br>
 zhang<br>
 wang<br>
-SQL> exit<br>
-
+SQL> exit<br><br>
+<br>
 
 以下样例查看表空间的数据库文件，以及每个文件的磁盘占用情况。<br>
 
