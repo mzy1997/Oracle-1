@@ -60,3 +60,9 @@ BEGIN
 END;
 ```
 ### 5.实验运行结果截图如下：
+### 截图1：
+![image](https://github.com/shengxu123456uuuu/Oracle/blob/master/test5/1.png)<br><br>
+
+
+### 截图2：
+![image](https://github.com/shengxu123456uuuu/Oracle/blob/master/test5/2.png)
